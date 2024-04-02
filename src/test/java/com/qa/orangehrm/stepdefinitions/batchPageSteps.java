@@ -32,11 +32,12 @@ public class batchPageSteps {
 	public void selects_Remember_Me() {
 		loginPage.doClickRememberMe();
 	}
+
 	@When("the user accepts terms and conditions")
 	public void the_user_accepts_terms_and_conditions() {
 		loginPage.doSelectTerms();
 	}
-	
+
 	@When("the user clicks on the login button")
 	public void the_user_clicks_on_the_login_button() {
 		dbPage = loginPage.doClickLoginButton();
@@ -55,12 +56,12 @@ public class batchPageSteps {
 
 	@When("click on the create new batch option")
 	public void click_on_the_create_new_batch_option() {
-		batchPage.doClickNewBatch();
-
+		batchPage.doClickNewBatch(); 
 	}
 
 	@When("select the campaign")
 	public void select_the_campaign() {
-		batchPage.selectCampaign();;
+		batchPage.selectCampaign();
+		;
 	}
 }

@@ -23,6 +23,7 @@ public class DashBoardPage {
 	}
 
 	public BatchPage selectBatchOption() {
+		eleUtil.waitForElementVisible(batchOption, 10);
 		JavascriptExecutor js = (JavascriptExecutor) this.driver;
 		js.executeScript("arguments[0].click();", eleUtil.getElement(batchOption));
 		return new BatchPage(driver);
