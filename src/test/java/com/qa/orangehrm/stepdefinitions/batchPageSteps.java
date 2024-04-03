@@ -51,7 +51,7 @@ public class batchPageSteps {
 
 	@When("the user selects the batch option")
 	public void the_user_selects_the_batch_option() {
-		dbPage.selectBatchOption();
+		batchPage = dbPage.selectBatchOption();
 	}
 
 	@When("click on the create new batch option")
